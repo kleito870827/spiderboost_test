@@ -161,6 +161,10 @@ border: none;
 }
 
 /*fomr*/
+.pError {
+    color: #fff;
+    font-size: 10px;
+}
 .form-cont{
   background-color: #157ea1;
   margin-top: 112px;

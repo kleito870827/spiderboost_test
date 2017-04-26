@@ -154,27 +154,32 @@
             <form id="contact-form" class="form" action="#" method="POST" role="form">
               <div class="row">
                 <div class="form-group col-xs-12 col-md-4 col-lg-3">
-                    <label class="form-label" for="name">First Name*</label>
+                    <label class="form-label" for="first_name">First Name*</label>
                     <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name*" required>
+                    <p class="pError" id="p_firstName"></p>
                 </div>
                 <div class="form-group col-xs-12 col-md-4 col-lg-3">
-                    <label class="form-label" for="email">Last Name*</label>
-                    <input type="email" class="form-control" id="last_name" name="last_name" placeholder="Last Name*" required>
+                    <label class="form-label" for="last_name">Last Name*</label>
+                    <input type="last_name" class="form-control" id="last_name" name="last_name" placeholder="Last Name*" required>
+                    <p class="pError" id="p_lastName"></p>
                 </div>
                 <div class="form-group col-xs-12 col-md-4 col-lg-3">
-                    <label class="form-label" for="subject">Email*</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Email*">
+                    <label class="form-label" for="email">Email*</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email*" required>
+                    <p class="pError" id="p_email"></p>
                 </div>
                 <div class="form-group col-xs-12 col-md-4 col-lg-3">
-                    <label class="form-label" for="subject">Phone*</label>
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone*">
+                    <label class="form-label" for="phone">Phone*</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone*" required>
+                    <p class="pError" id="p_phone"></p>
                 </div>
                 <div class="form-group col-xs-12 col-md-8 col-lg-9 message-input">
                     <label class="form-label" for="message">Message*</label>
                     <textarea name="message" class="form-control" id="message" placeholder="Message*" required></textarea>
+                    <p class="pError" id="p_message"></p>
                 </div>
                 <div class="text-center col-xs-12 col-md-12 col-lg-2">
-                    <button type="submit" class="btn btn-start-order">SUBMIT</button>
+                    <button type="submit" id="button-submit" class="btn btn-start-order">SUBMIT</button>
                 </div>
               </div>
             </form>
