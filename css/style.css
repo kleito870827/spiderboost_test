@@ -278,10 +278,11 @@ hr{
 .footer-services, .footer-clinic, .footer-helping{
   margin-top: 40px;
 }
-.footer-position p{
+.footer-position a{
   color: #c2c2c2;
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
 }
 .footer-position h5{
   color: #157ea1;
@@ -360,6 +361,12 @@ label.footer-map{
   border-left: 1px solid #2c2c2c;
   padding-left: 2%;
 }
+.footer-helping a, .footer-helping-xs a{
+  color: #337ab7;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 
 @media (max-width:1150px) {
   .nav > li > a {
@@ -427,5 +434,10 @@ label.footer-map{
   }
   .logos{
     margin-top: 15vw;
+  }
+}
+@media (max-width: 450px) {
+  .footer-helping-xs .footer-map-xs-a{
+    font-size: 2.3vw;
   }
 }

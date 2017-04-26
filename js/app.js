@@ -22,6 +22,12 @@ $('#myCarousel').carousel({
         // Code for adding/removing classes here
         $('.form-group').find('input, textarea').on('focusin', function(){
           $(this).prev('label').removeClass('js-hide-label');
+          $(this).removeAttr('placeholder');
+        });
+        $('.form-group').find('input, textarea').on('focusout', function(){
+          var placeholder = $(this).prev().text();
+          $(this).prev('label').addClass('js-hide-label');
+          $(this).attr('placeholder', placeholder);
         });
         // $('.form-group').find('input, textarea').on('keyup blur focus', function(e){
         //
