@@ -13,13 +13,13 @@
 </head>
 <body>
       <div class="cont-logo-medias">
-        <img src="img/logo.png" alt="logo">
-        <div class="social-medias">
+        <img class="img-responsive" src="img/logo.png" alt="logo">
+        <div class="social-medias hidden-xs">
           <div class="social-icon">
-            <i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i>
-            <i class="fa fa-lg fa-google-plus-square" aria-hidden="true"></i>
-            <i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i>
-            <i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-lg fa-google-plus-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i></a>
           </div>
           <h1>(305) 907 6191</h1>
           <h6>HABLAMOS ESPANOL!</h6>
@@ -29,6 +29,9 @@
          <div class="container-fluid">
            <!-- Brand and toggle get grouped for better mobile display -->
            <div class="navbar-header">
+             <div class="visible-xs-block xs-phone-contact">
+               <h4><strong>(305) 907 6191<strong> <span>HABLAMOS ESPANOL!</span></h4>
+             </div>
              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar"></span>
@@ -40,7 +43,16 @@
            <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
              <ul class="nav navbar-nav">
-               <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+               <li class="visible-xs-block">
+                 <div class="xs-icon-nav">
+                   <a href="#"><i class="fa fa-lg fa-home" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-lg fa-facebook-official" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-lg fa-google-plus-square" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i></a>
+                 </div>
+               </li>
+               <li class="hidden-xs"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                <li><a href="#">ABOUT</a></li>
                <li><a href="#">PERIPHERAL VASCULAR</a></li>
                <li><a href="#">VEINS</a></li>
@@ -58,10 +70,10 @@
     <!-- body -->
       <div class="container">
         <div class="workers-why-us row">
-          <div class="workers col-md-7">
+          <div class="workers col-xs-offset-0 col-md-7 col-lg-7">
             <img class="img-responsive image-workers" src="img/workers.png" alt="workers photo">
           </div>
-          <div class="why-us-p col-md-4">
+          <div class="why-us-p col-md-4 col-lg-4">
             <h2>Why Us</h2>
             <p>Our family of physicians, caregivers and executives at Miami Vascular Physicians strive to achieve enhanced patient care through clinical excellence and unparalleled service. Our Board Certified Vascular Specialist provides the highest level of patient care and academic expertise in the form of minimally invasive surgical and catheter-based procedures using state of the art equipment and imaging guidance.</p>
           </div>
@@ -84,6 +96,42 @@
           <img class="img-responsive place5" src="img/place5.png" alt="">
         </div>
       </div>
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel">
+                     <!-- Carousel items -->
+                        <div class="carousel slide" id="eventCarousel" data-interval="0">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-xs-12">
+                                        <a href="#"><img src="img/place1.png" class="img-responsive center-block"></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12">
+                                        <a href="#"><img src="img/place2.png" class="img-responsive center-block"></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12">
+                                        <a href="#"><img src="img/place3.png" class="img-responsive center-block"></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12">
+                                        <a href="#"><img src="img/place4.png" class="img-responsive center-block"></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-12">
+                                        <a href="#"><img src="img/place5.png" class="img-responsive center-block"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
+                            <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a>
+                        </div>
+                        <!--/carousel-inner-->
+                    </div><!--/myCarousel-->
       <div class="container lorem-cont">
           <div class="lorem-p">
             <h2>Lorem Ipsum</h2>
@@ -173,6 +221,22 @@
             </div>
         </div>
         <hr>
+        <div class="footer-helping-xs">
+          <h5>We Look Forward to helping you <span>Hablamos Español!</span></h5>
+          <hr>
+          <label><i class="fa fa-lg fa-envelope" aria-hidden="true"></i> <a href="mailto:info@miamivascularphysicians.com">info@miamivascularphysicians.com</a><i class="fa fa-chevron-right enveloper-right" aria-hidden="true"></i></label>
+          <hr class='enveloper-hr'>
+          <label><i class="fa fa-lg fa-phone" aria-hidden="true"></i> 305.907.6191<i class="fa fa-chevron-right phone-right" aria-hidden="true"></i></label>
+          <hr class="phone-hr">
+          <label><i class="fa fa-lg fa-fax" aria-hidden="true"></i> 305.907.6191 <i class="fa fa-chevron-right fax-right" aria-hidden="true"></i></label>
+          <hr class="fax-hr">
+          <label class="footer-map"><i class="fa fa-lg fa-map-marker" aria-hidden="true"></i> <p>1380 NE MIAMI GARDENS DR.<br/>
+            SUITE 240, NORTH MIAMI BEACH, FL 33179</p>
+            <a href="">SEE ON MAP <i class="fa fa-external-link external-link-i" aria-hidden="true"></i></a>
+            <i class="fa fa-chevron-right map-right" aria-hidden="true"></i>
+          </label>
+        </div>
+        <hr class="footer-helping-xs">
             <div class="all-reserved">
               <p>&copy;20016 MyVeinsTreatment.com - All rights reserved</p>
               <p>Powered By: Spiderboost</p>
