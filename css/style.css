@@ -440,6 +440,9 @@ label.footer-map{
   .footer-helping-xs .footer-map-xs-a{
     font-size: 2.3vw;
   }
+  .navbar-default .navbar-nav > li > a{
+    font-size: 3vw;
+  }
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
    /* Safari 3.0 and Opera 9 rules here */
